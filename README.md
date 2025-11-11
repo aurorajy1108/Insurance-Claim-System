@@ -4,27 +4,10 @@ This is a simple static front-end demo that demonstrates a three-step insurance 
 
 ## Local deployment (recommended)
 
-There are two simple ways to run this demo locally. Both run a small static HTTP server: the Service Worker and some file-export features require HTTP (opening index.html directly with the file:// scheme will not work properly).
-
-Option A — Serve from project root (recommended when you keep the repo root):
-
-1. From the project root (or any parent folder that contains `self-hosted_websites`), run:
+Serve from the demo folder:
 
 ```bash
-cd /path/to/OSWorld-V2
-python3 -m http.server 8000
-```
-
-2. Open the demo in your browser:
-
-```
-http://localhost:8000/self-hosted_websites/Insurance-Claim-System/
-```
-
-Option B — Serve from the demo folder (makes the demo available at the server root):
-
-```bash
-cd /path/to/OSWorld-V2/self-hosted_websites/Insurance-Claim-System
+cd /path/to/Insurance-Claim-System
 python3 -m http.server 8000
 ```
 
@@ -33,8 +16,6 @@ Then open:
 ```
 http://localhost:8000/
 ```
-
-Either option is fine. Option B avoids the subpath and can be slightly simpler for quick checks.
 
 
 ## Service Worker note
